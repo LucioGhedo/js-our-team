@@ -4,50 +4,32 @@ const cardContainer = document.querySelector('.team-container')
 console.log(cardContainer)
 const userData = [
     {
-        img : `<img
-        src="img/wayne-barnett-founder-ceo.jpg"
-        alt="Wayne Barnett"
-      />`,
+        img : 'wayne-barnett-founder-ceo.jpg',
         name : 'Wayne Barnett',
         job : 'Founder & CEO',
     },
     {
-        img: `<img
-        src="img/angela-caroll-chief-editor.jpg"
-        alt="Wayne Barnett"
-      />`,
+        img: 'angela-caroll-chief-editor.jpg',
         name: 'Angela Caroll',
         job: 'Chief Editor',
     },
     {
-        img : `<img
-        src="img/walter-gordon-office-manager.jpg"
-        alt="Wayne Barnett"
-      />`,
+        img : 'walter-gordon-office-manager.jpg',
         name : 'Walter Gordon',
         job : 'Office Manager',
     },
     {
-        img : `<img
-        src="img/angela-lopez-social-media-manager.jpg"
-        alt="Wayne Barnett"
-      />`,
+        img : 'angela-lopez-social-media-manager.jpg',
         name : 'Angela Lopez',
         job : 'Social Media Manager',
     },
     {
-        img : `<img
-        src="img/scott-estrada-developer.jpg"
-        alt="Wayne Barnett"
-      />`,
+        img : 'scott-estrada-developer.jpg',
         name : 'Scott Estrada',
         job : 'Developer',
     },
     {
-        img : `<img
-        src="img/barbara-ramos-graphic-designer.jpg"
-        alt="Wayne Barnett"
-      />`,
+        img : 'barbara-ramos-graphic-designer.jpg',
         name : 'Barbara Ramos',
         job : 'Graphic Designer',
     },
@@ -58,7 +40,10 @@ for(let i = 0; i < userData.length; i++) {
     const classDraw = `
     <div class="team-card">
             <div class="card-image">
-              ${thisUser.img}
+            <img
+            src="img/${thisUser.img}"
+            alt="${thisUser.name}"
+          />
             </div>
             <div class="card-text">
               <h3>${thisUser.name}</h3>
